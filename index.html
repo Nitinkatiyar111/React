@@ -7,14 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-     <!-- Hello world in JS -->
     <div id="root"></div>
+     <!-- Hello world in REACT CDN -->
+     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-    <script>
-        const heading = document.createElement('h1');
-        heading.innerHTML ="Hello world"
-        root.appendChild(heading);
-    </script>
-
+<script>
+       const heading = React.createElement("h1",{},"Hello World!!")
+       const root = ReactDOM.createRoot(document.getElementById("root"));
+       root.render(heading);
+</script>
 </body>
+
 </html>
